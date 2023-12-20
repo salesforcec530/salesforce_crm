@@ -4,6 +4,6 @@
       "goal": "-Pprod package -DskipTests"
     },
     "deploy": {
-      "goal": "salesforce_crm-0.0.1-SNAPSHOT.jar"
+      "goal": "/salesforce_crm/target/salesforce_crm-0.0.1-SNAPSHOT.jar"
     }
   }
