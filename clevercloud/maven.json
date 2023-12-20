@@ -1,9 +1,0 @@
-{
-    "build": {
-      "type": "maven",
-      "goal": "build"
-    },
-    "deploy": {
-      "goal": "salesforce_crm-0.0.1-SNAPSHOT.war"
-    }
-  }
