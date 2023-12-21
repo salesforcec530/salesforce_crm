@@ -3,13 +3,17 @@ package com.example.demo.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.catalina.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.HeaderResponse;
+import com.example.demo.entity.Product;
 
 @RestController
 @RequestMapping("api/gate-way/")
@@ -36,4 +40,14 @@ public class TestAPIController {
         headersMap.forEach(headers::add);
         return headers;
     }
+    
+    @PostMapping("/create")
+    public ResponseEntity<Product> createUser(@RequestBody Product product) {
+        // Xử lý logic tạo người dùng ở đây
+        // Ví dụ: Lưu user vào cơ sở dữ liệu
+
+        // Trả về response với đối tượng User và HTTP status OK
+        return new ResponseEntity<>(product, HttpStatus.OK);
+    }
+    
 }
