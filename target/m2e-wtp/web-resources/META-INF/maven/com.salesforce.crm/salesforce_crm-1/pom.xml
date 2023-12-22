@@ -8,8 +8,8 @@
 		<version>3.2.2-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.demo</groupId>
-	<artifactId>salesforce_crm</artifactId>
+	<groupId>com.salesforce.crm</groupId>
+	<artifactId>salesforce_crm-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>salesforce_crm-1</name>
